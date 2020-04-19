@@ -1,5 +1,27 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<h5>helllo worrld</h5>
+{% include './navbar.html' %}
+<div class="index-main" id="app">
+    <div class="hero-container">
+        <div class="hero-index-left">
+            <div class="header typewriter">
+                <h1>Hi, my name is Brandon, and Im here to code</h1>
+                <img src="{% static 'MyPortfolio/images/wordcloud.png' %}" alt="">
+            </div>
+        </div>
+        <div class="hero-index-right ">
+            <div>
+                <img class="face-img" src="{% static 'MyPortfolio/images/face.jpg' %}" alt="">
+            </div>
+            <h5>I am a full stack developer using HTML5, CSS3, Django, Vue.JS, BootStrap, Materialize, Python, ES6 JS,
+                React, SQLite3</h5>
+                <ul>
+                    <li class="social"><i class="fab fa-linkedin-in fa-3x"></i></liclass>
+                    <li class="social"><i class="fab fa-github fa-3x"></i></li>
+                </ul>
+        </div>
+    </div>
+</div>
 {% endblock %}
+
